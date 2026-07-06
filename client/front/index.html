@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee & Bites | Авторское меню</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="wrapper">
+    
+    <input type="checkbox" id="cart-toggle" class="cart-toggle-checkbox">
+
+    
+    <label for="cart-toggle" class="cart-overlay"></label>
+
+    
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: var(--accent-color);">
+                    <path d="M2 21H18C18.55 21 19 20.55 19 20C19 19.45 18.55 19 18 19H2C1.45 19 1 19.45 1 20C1 20.55 1.45 21 2 21ZM20 8H18V5H20C21.1 5 22 5.9 22 7V11C22 12.1 21.1 13 20 13H18V15H20C22.21 15 24 13.21 24 11V7C24 4.79 22.21 3 20 3H16V1C16 0.45 15.55 0 15 0H3C1.34 0 0 1.34 0 3V15C0 17.21 1.79 19 4 19H14C16.21 19 18 17.21 18 15V8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6V8ZM16 15C16 16.1 15.1 17 14 17H4C2.9 17 2 16.1 2 15V3C2 2.45 2.45 2 3 2H15C15.55 2 16 2.45 16 3V15Z" fill="currentColor"/>
+                </svg>
+                Coffee<span>& Bites</span>
+            </a>
+            
+
+            <div class="header-actions" style="display: flex; gap: 1rem; align-items: center;">
+                <button class="profile-btn" id="profile-trigger">
+                    <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: currentColor;">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <span id="auth-status-text">Войти</span>
+                </button>
+
+                <label for="cart-toggle" class="cart-btn" id="cart-trigger">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    Корзина
+                    <div class="cart-badge">2</div>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-banner">
+            <h2>Начните свой день с идеального кофе</h2>
+            <p>Отборные зерна арабики, свежие хрустящие сэндвичи и авторские десерты, приготовленные с любовью для вас.</p>
+        </div>
+    </section>
+
+    
+    <main class="menu-section" id="coffee-section">
+        <h2 class="section-title">Авторский Кофе</h2>
+        
+        <div class="menu-grid">
+            
+            <div class="menu-card">
+                <div class="card-image-wrapper">
+                    <span class="card-badge classic">Классика</span>
+                    <img src="images/classic_latte.png" alt="Классический Латте">
+                </div>
+                <div class="card-content">
+                    <div class="card-header-info">
+                        <h3 class="card-title">Классический Латте</h3>
+                        <span class="card-price">320 ₽</span>
+                    </div>
+                    <p class="card-description">Эспрессо из 100% арабики с нежной молочной пенкой. Идеальный баланс мягкости и глубокого кофейного вкуса.</p>
+                    <button class="add-to-cart-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="menu-card">
+                <div class="card-image-wrapper">
+                    <span class="card-badge bestseller">Бестселлер</span>
+                    <img src="images/cappuccino.png" alt="Капучино">
+                </div>
+                <div class="card-content">
+                    <div class="card-header-info">
+                        <h3 class="card-title">Капучино</h3>
+                        <span class="card-price">290 ₽</span>
+                    </div>
+                    <p class="card-description">Крепкий эспрессо и густая молочная пена. Классика кофейной культуры для истинных ценителей баланса.</p>
+                    <button class="add-to-cart-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="menu-card">
+                <div class="card-image-wrapper">
+                    <span class="card-badge classic">Классика</span>
+                    <img src="images/flat_white.png" alt="Флэт Уайт">
+                </div>
+                <div class="card-content">
+                    <div class="card-header-info">
+                        <h3 class="card-title">Флэт Уайт</h3>
+                        <span class="card-price">310 ₽</span>
+                    </div>
+                    <p class="card-description">Двойной ристретто с тонким слоем бархатистого молока. Для тех, кто предпочитает более яркий и выраженный вкус кофе.</p>
+                    <button class="add-to-cart-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="menu-card">
+                <div class="card-image-wrapper">
+                    <span class="card-badge new">Выгодно</span>
+                    <img src="images/caramel_macchiato.png" alt="Карамельный Маккиато">
+                </div>
+                <div class="card-content">
+                    <div class="card-header-info">
+                        <h3 class="card-title">Карамельный Маккиато</h3>
+                        <span class="card-price">380 ₽</span>
+                    </div>
+                    <p class="card-description">Слоистый кофейный напиток с ванильным сиропом, молоком, эспрессо и поливкой из натурального золотого карамельного соуса.</p>
+                    <button class="add-to-cart-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="menu-card">
+                <div class="card-image-wrapper">
+                    <span class="card-badge classic">Классика</span>
+                    <img src="images/espresso.png" alt="Эспрессо">
+                </div>
+                <div class="card-content">
+                    <div class="card-header-info">
+                        <h3 class="card-title">Эспрессо</h3>
+                        <span class="card-price">180 ₽</span>
+                    </div>
+                    <p class="card-description">Основа всего. Концентрированный и глубокий вкус отборных зерен арабики с плотной крема и богатой историей.</p>
+                    <button class="add-to-cart-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="menu-card">
+                <div class="card-image-wrapper">
+                    <span class="card-badge bestseller">Популярное</span>
+                    <img src="images/raf_coffee.png" alt="Раф Кофе">
+                </div>
+                <div class="card-content">
+                    <div class="card-header-info">
+                        <h3 class="card-title">Раф Кофе</h3>
+                        <span class="card-price">350 ₽</span>
+                    </div>
+                    <p class="card-description">Десертный кофейный напиток на основе нежных сливок и эспрессо, взбитых вместе с ароматным ванильным сахаром.</p>
+                    <button class="add-to-cart-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <section class="menu-section" id="sandwiches-section">
+        <h2 class="section-title">Свежие Сендвичи</h2>
+        
+        <div class="menu-grid">
+            
+            <div class="menu-card">
+                <div class="card-image-wrapper">
+                    <span class="card-badge bestseller">Сытно</span>
+                    <img src="images/club_sandwich.png" alt="Клаб-сендвич">
+                </div>
+                <div class="card-content">
+                    <div class="card-header-info">
+                        <h3 class="card-title">Клаб-сендвич</h3>
+                        <span class="card-price">280 ₽</span>
+                    </div>
+                    <p class="card-description">Двухъярусный тост со слайсами нежной индейки, хрустящим беконом, свежими томатами, листьями салата и домашним майонезом.</p>
+                    <button class="add-to-cart-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="menu-card">
+                <div class="card-image-wrapper">
+                    <span class="card-badge new">Новинка</span>
+                    <img src="images/salmon_croissant.png" alt="Круассан с лососем">
+                </div>
+                <div class="card-content">
+                    <div class="card-header-info">
+                        <h3 class="card-title">Круассан с лососем</h3>
+                        <span class="card-price">340 ₽</span>
+                    </div>
+                    <p class="card-description">Хрустящий французский круассан со слабосоленым лососем, нежным сливочным сыром и веточкой свежего укропа.</p>
+                    <button class="add-to-cart-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        Добавить в корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <aside class="cart-drawer">
+        <div class="cart-header">
+            <h3>Ваш заказ</h3>
+            <label for="cart-toggle" class="close-cart-btn">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+                </svg>
+            </label>
+        </div>
+
+        <div class="cart-items">
+            
+            <div class="cart-item">
+                <img src="images/classic_latte.png" alt="Классический Латте" class="cart-item-img">
+                <div class="cart-item-details">
+                    <div class="cart-item-title">Классический Латте</div>
+                    <div class="cart-item-price">320 ₽</div>
+                </div>
+                <div class="cart-quantity-control">
+                    <button class="quantity-btn">-</button>
+                    <span class="quantity-value">1</span>
+                    <button class="quantity-btn">+</button>
+                </div>
+            </div>
+
+            
+            <div class="cart-item">
+                <img src="images/club_sandwich.png" alt="Клаб-сендвич" class="cart-item-img">
+                <div class="cart-item-details">
+                    <div class="cart-item-title">Клаб-сендвич</div>
+                    <div class="cart-item-price">280 ₽</div>
+                </div>
+                <div class="cart-quantity-control">
+                    <button class="quantity-btn">-</button>
+                    <span class="quantity-value">1</span>
+                    <button class="quantity-btn">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span class="total-label">Итого к оплате:</span>
+                <span class="total-price">600 ₽</span>
+            </div>
+            <button class="checkout-btn">
+                Оформить заказ
+            </button>
+        </div>
+    </aside>
+</div>
+
+
+<div class="modal" id="auth-modal" style="display: none;">
+    <div class="modal-overlay" id="auth-modal-overlay"></div>
+    <div class="modal-content">
+        <button class="close-modal-btn" id="close-auth-modal">&times;</button>
+        
+        
+        <div class="auth-form-container" id="login-form-container">
+            <h3>Вход в профиль</h3>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-username">Имя пользователя (username)</label>
+                    <input type="text" id="login-username" required placeholder="Введите username">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password" required placeholder="Введите пароль">
+                </div>
+                <button type="submit" class="auth-submit-btn">Войти</button>
+            </form>
+            <p class="auth-switch-text">Нет аккаунта? <a href="#" id="switch-to-register">Зарегистрироваться</a></p>
+        </div>
+
+        
+        <div class="auth-form-container" id="register-form-container" style="display: none;">
+            <h3>Регистрация</h3>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-login">Логин (email или телефон)</label>
+                    <input type="text" id="register-login" required placeholder="Придумайте логин для входа">
+                </div>
+                <div class="form-group">
+                    <label for="register-username">Имя пользователя (username)</label>
+                    <input type="text" id="register-username" required placeholder="Имя для отображения на выдаче">
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Пароль</label>
+                    <input type="password" id="register-password" required placeholder="Минимум 6 символов">
+                </div>
+                <button type="submit" class="auth-submit-btn">Создать аккаунт</button>
+            </form>
+            <p class="auth-switch-text">Уже есть аккаунт? <a href="#" id="switch-to-login">Войти</a></p>
+        </div>
+
+        
+        <div class="auth-form-container" id="user-profile-container" style="display: none;">
+            <h3>Личный кабинет</h3>
+            
+            <div class="cabinet-tabs">
+                <button class="cabinet-tab-btn active" data-tab="orders">Мои заказы</button>
+                <button class="cabinet-tab-btn" data-tab="profile">Мои данные</button>
+            </div>
+
+            
+            <div class="cabinet-tab-content active" id="tab-orders">
+                <div id="my-orders-list" class="orders-list">
+                    
+                </div>
+            </div>
+
+            
+            <div class="cabinet-tab-content" id="tab-profile" style="display: none;">
+                <form id="edit-profile-form">
+                    <div class="form-group">
+                        <label for="edit-login">Логин (email или телефон)</label>
+                        <input type="text" id="edit-login" required placeholder="Введите новый логин">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-username">Имя пользователя (username)</label>
+                        <input type="text" id="edit-username" required placeholder="Имя для отображения">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-password">Новый пароль</label>
+                        <input type="password" id="edit-password" placeholder="Оставьте пустым, чтобы не менять">
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Сохранить изменения</button>
+                </form>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 1.5rem 0;">
+            <button class="logout-btn" id="logout-trigger">Выйти из профиля</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="order-success-modal" style="display: none;">
+    <div class="modal-overlay" id="order-success-overlay"></div>
+    <div class="modal-content">
+        <button class="close-modal-btn" id="close-order-success-modal">&times;</button>
+        <div class="order-success-container">
+            <h3 style="font-size: 1.6rem; color: var(--primary-color); margin-bottom: 1.5rem; font-weight: 700;">Заказ оформлен</h3>
+            <div class="order-details-card" style="background-color: var(--bg-color); padding: 1.2rem; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 1.5rem; font-size: 0.95rem; line-height: 1.6; color: var(--text-color);">
+                <p><strong>Номер заказа:</strong> <span id="success-order-number">...</span></p>
+                <p><strong>Клиент:</strong> <span id="success-order-user">...</span></p>
+                <p><strong>Статус:</strong> <span id="success-order-status">...</span></p>
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 0.8rem 0;">
+                <div id="success-order-items-list" style="margin-bottom: 0.8rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                    
+                </div>
+                <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 0.8rem 0;">
+                <p><strong>Итого к оплате:</strong> <span id="success-order-total" style="font-weight: 700; color: var(--accent-color);">...</span></p>
+            </div>
+            <button class="auth-submit-btn" id="ok-order-btn">Отлично</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
